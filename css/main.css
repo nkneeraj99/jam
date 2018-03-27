@@ -15,14 +15,18 @@
 html{
     overflow-x: hidden;
     font-size: 100%;
-
 }
 
 body{
     overflow-x: hidden;
     font-size: 1em;
+    font-family: 'Raleway', sans-serif;
 }
 
+@font-face {
+    src: url("../fonts/Didot.ttc");
+    font-family: "Didot", sans-serif;
+}
 
 /* ==========================================================================
    top header
@@ -104,7 +108,7 @@ body{
 }
 
 #slider .carousel-overlay-text{
-    max-width: 850px;
+    max-width: 1110px;
     margin: 0 auto;
     background-color: #000000b0;
     color: #fff;
@@ -118,6 +122,8 @@ body{
     text-transform: uppercase;
     font-weight: lighter;
     letter-spacing: 2px;
+    font-family: "Didot", sans-serif;
+    font-size: 2.5em;
 }
 
 
@@ -125,7 +131,7 @@ body{
     background-color: var(--base-color);
     position: static;
     padding: 3em 2em;
-    max-width: 850px;
+    max-width: 1110px;
     margin: 0 auto;
     color: #fff;
 }
@@ -164,6 +170,32 @@ body{
 }
 
 
+
+.carousel-caption {
+    width: 1110px;
+    background-color: #00000096;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.carousel-caption h2 {
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-family: "Didot", sans-serif;
+    font-size: 2.5em;
+}
+
+.carousel-caption p {
+    font-family: "Didot", sans-serif;
+    font-size: 1.7em;
+
+}
+
+
+
 @media screen and (max-width: 768px) {
     #slider .carousel-overlay-text{
         margin: 0;
@@ -192,6 +224,10 @@ body{
 
 .input-group-text{
     border-radius: 0;
+}
+
+.carousel-overlay-form .input-group-text svg{
+    opacity: .3;
 }
 
 /* ==========================================================================
@@ -240,7 +276,7 @@ body{
 .top-scorer li,
 .our-achievers li{
     max-width: 100%;
-    width: 300px;
+    width: 355px;
     margin: 10px 5px auto;
     display: inline-block;
     text-decoration: none;
@@ -369,6 +405,38 @@ body{
     width: 100%;
 }
 
+#testimonials .testi-bg .play-btn{
+    width: 50px;
+    height: 70px;
+    line-height: 70px;
+    background-color: var(--button-color);
+    display: inline-block;
+    text-align: center;
+    margin-top: -15px;
+}
+
+#testimonials .testi-bg2 .play-btn{
+    width: 50px;
+    height: 70px;
+    line-height: 70px;
+    background-color: var(--button-color);
+    display: inline-block;
+    text-align: center;
+    margin-top: -15px;
+}
+
+#testimonials .testi-bg .play-text {
+    font-size: .9em;
+    text-align: left;
+}
+
+#testimonials .testi-bg2 .play-text {
+    font-size: .9em;
+    text-align: left;
+}
+
+
+
 @media screen and (max-width: 768px) {
     #testimonials .testi-bg,
     #testimonials .testi-bg2{
@@ -478,6 +546,16 @@ footer .copyright .social-list li a{
     padding: 0;
 }
 
+
+.footer .stander li{
+    list-style: none;
+}
+
+.footer .stander li a{
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
 @media screen and (max-width: 768px) {
     footer{
         padding: 3em 1em 2em 2em;
@@ -507,6 +585,9 @@ footer .copyright .social-list li a{
 }
 
 
+
+
+
 /* ==========================================================================
    Title
    ========================================================================== */
@@ -514,6 +595,7 @@ footer .copyright .social-list li a{
 .title{
     position: relative;
     margin: 4em 0;
+    font-family: "Didot" ,sans-serif;
 }
 
 .title h2{
@@ -560,7 +642,7 @@ footer .copyright .social-list li a{
 }
 
 .black-color{
-    color: #000;
+    color: #000 !important;
 }
 
 hr{
@@ -639,10 +721,13 @@ hr{
     height: 80px;
     line-height: 80px;
     margin-bottom: 0;
+    text-align: center;
+    padding: 0;
 }
+
 .exo-menu > li {
     display: inline-block;
-    margin-right: 2em;
+    margin-right: 2.7em;
 }
 
 .exo-menu > li > a{
@@ -655,6 +740,7 @@ hr{
     -o-transition: color 0.2s linear, background 0.2s linear;
     transition: color 0.2s linear, background 0.2s linear;
 }
+
 .exo-menu > li > a.active,
 .exo-menu > li > a:hover,
 li.drop-down ul > li > a:hover{
@@ -680,11 +766,13 @@ li.drop-down:before {
     top: 20px;
     font-size: 14px;
 }
+
 li.drop-down>ul{
     left: 0px;
     min-width: 230px;
 
 }
+
 .drop-down-ul{display:none;}
 .flyout-right>ul,
 .flyout-left>ul{
@@ -708,6 +796,8 @@ li.drop-down>ul>li>a,
     -o-transition: color 0.2s linear, background 0.2s linear;
     transition: color 0.2s linear, background 0.2s linear;
 }
+
+
 .flyout-right ul>li>a ,
 .flyout-left ul>li>a {
     border-bottom: 1px dotted #B8C7BC;
@@ -726,6 +816,7 @@ li.drop-down>ul>li>a,
     min-width: 742px;
 
 }
+
 h4.row.mega-title {
     color:#eee;
     margin-top: 0px;
@@ -735,12 +826,14 @@ h4.row.mega-title {
     text-transform: uppercase;
     border-bottom: 1px solid #ccc;
 }
+
 .flyout-mega ul > li > a {
     font-size: 90%;
     line-height: 25px;
     color: #fff;
     font-family: inherit;
 }
+
 .flyout-mega ul > li > a:hover,
 .flyout-mega ul > li > a:active,
 .flyout-mega ul > li > a:focus{
@@ -760,6 +853,7 @@ h4.row.mega-title {
     top: 80px;
 
 }
+
 h4.row.mega-title {
     color: #eee;
     margin-top: 0;
@@ -776,6 +870,7 @@ h4.row.mega-title {
     font-size: 90%;
     display: block;
 }
+
 ul.stander li a {
     padding: 3px 0px;
 }
@@ -789,6 +884,7 @@ ul.description li span {
     color: #ccc;
     font-size: 85%;
 }
+
 a.view-more{
     border-radius: 1px;
     margin-top:15px;
@@ -797,10 +893,12 @@ a.view-more{
     line-height: 21px !important;
     display: inline-block !important;
 }
+
 a.view-more:hover{
     color:#fff;
     background:#0DADEF;
 }
+
 ul.icon-des li a i {
     color: #fff;
     width: 35px;
@@ -816,6 +914,7 @@ ul.icon-des li {
     display: table;
     margin-bottom: 11px;
 }
+
 /*Blog DropDown*/
 .Blog{
     left:0;
@@ -825,20 +924,24 @@ ul.icon-des li {
     background:#547787;
     padding-bottom:15px;
 }
+
 .Blog .blog-title{
     color:#fff;
     font-size:15px;
     text-transform:uppercase;
 
 }
+
 .Blog .blog-des{
     color:#ccc;
     font-size:90%;
     margin-top:15px;
 }
+
 .Blog a.view-more{
     margin-top:0px;
 }
+
 /*Images*/
 .Images{
     left:0;
@@ -849,11 +952,13 @@ ul.icon-des li {
     background:#547787;
     padding-bottom:15px;
 }
+
 .Images h4 {
     font-size: 15px;
     margin-top: 0px;
     text-transform: uppercase;
 }
+
 /*common*/
 .flyout-right ul>li>a ,
 .flyout-left ul>li>a,
@@ -883,6 +988,7 @@ li.drop-down>a:hover +.drop-down-ul,
 li.flyout-mega>a:hover +.flyout-mega-wrap{
     display:block;
 }
+
 /*responsive*/
 @media (min-width:767px){
     .exo-menu > li > a{
@@ -948,6 +1054,7 @@ a.toggle-menu{
 
 .stander li{
     line-height: 30px;
+    text-align: left;
 }
 
 .stander li a{
