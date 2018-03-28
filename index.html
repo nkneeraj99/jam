@@ -74,7 +74,13 @@ Header
                         <li class="nav-item"><a class="nav-link " href="#">OUR COMPANY</a></li>
                         <li class="nav-item"><a class="nav-link " href="#">CONTACT US</a></li>
                         <li class="nav-item"><a class="nav-link " href="#"><i class="fas fa-share-alt"></i></a></li>
-                        <li class="nav-item"><a class="nav-link " href="#"><i class="fa fa-search"></i></a></li>
+                        <li class="nav-item">
+                            <div class="menu-search-container">
+                                <input type="search" class="form-control" placeholder="Type your search words">
+                                <i class="fa fa-search icon-attach"></i>
+
+                            </div>
+                        </li>
                     </ul>
 
                 </div>
@@ -87,6 +93,7 @@ Header
     </div>
 
 
+    <!--========================Visible on Desktop=============================-->
 
     <div class="hidden-sm hidden-xs">
         <div class="container">
@@ -282,25 +289,25 @@ Slider
     <div class="carousel-overlay-container">
         <!--<div class="carousel-overlay-text clearfix">-->
 
-            <!--<div class="row">-->
-                <!--<div class="col-md-12">-->
-                    <!--<h2>Forging a team of leaders for <br>-->
-                        <!--a giant leap towards the future</h2>-->
-                    <!--<p>Personalised Student Care <br>-->
-                        <!--Experienced Faculty <br>-->
-                        <!--Exhaustive Mock Test Collection <br>-->
-                        <!--Customised for Indian Test-takers</p>-->
+        <!--<div class="row">-->
+        <!--<div class="col-md-12">-->
+        <!--<h2>Forging a team of leaders for <br>-->
+        <!--a giant leap towards the future</h2>-->
+        <!--<p>Personalised Student Care <br>-->
+        <!--Experienced Faculty <br>-->
+        <!--Exhaustive Mock Test Collection <br>-->
+        <!--Customised for Indian Test-takers</p>-->
 
-                <!--</div>-->
-            <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
         <!--</div>-->
 
 
-        <div class="carousel-overlay-form fixed-form"  id="myHeader">
+        <div class="carousel-overlay-form " id="fixed-form">
 
 
 
-            <div class="row">
+            <div class="row on-sticky-hide ">
                 <div class="col-md-5">
                     <div class="title">
                         <h3>Sign up for Success</h3>
@@ -319,7 +326,7 @@ Slider
                                             <span class="input-group-text" id="basic-addon1"><i class="far fa-file-alt"></i>
 </span>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="Username" aria-label="Name" aria-describedby="basic-addon1">
+                                        <input type="text" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
                                     </div>
                                 </div>
                             </div>
@@ -362,7 +369,12 @@ Slider
                                             <span class="input-group-text" id="basic-addon1"><i class="fas fa-arrow-up"></i>
 </span>
                                         </div>
-                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Select Program</option>
+                                            <option value="">Select</option>
+                                            <option value="">Select</option>
+                                            <option value="">Select</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -394,6 +406,53 @@ Slider
                 </div>
 
             </div>
+
+
+            <div class="row on-sticky-show " >
+                <div class="col-md-12">
+                    <form class="form-inline">
+                        <div class="input-group mb-2 mr-sm-2">
+                            <div class="input-group-prepend">
+                                 <span class="input-group-text" id="basic-addon1"><i class="far fa-file-alt"></i>
+</span>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Name">
+                        </div>
+
+
+                        <div class="input-group mb-2 mr-sm-2">
+                            <div class="input-group-prepend">
+  <span class="input-group-text" id="basic-addon1"><i class="fas fa-bars"></i>
+</span>                            </div>
+                            <input type="number" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Phone Number">
+                        </div>
+
+
+                        <div class="input-group mb-2 mr-sm-2">
+                            <div class="input-group-prepend">
+                       <span class="input-group-text" id="basic-addon1"><i class="far fa-calendar-minus"></i>
+</span>                            </div>
+                            <input type="email" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Email Id">
+                        </div>
+
+                        <div class="input-group mb-2 mr-sm-2">
+                            <div class="input-group-prepend"><span class="input-group-text" id="basic-addon1"><i class="fas fa-arrow-up"></i></span>
+                            </div>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select Program</option>
+                                <option value="">Select</option>
+                                <option value="">Select</option>
+                                <option value="">Select</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group mb-2 mr-sm-2">
+                        <input type="submit" class="btn" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
         </div>
 
 
@@ -1173,7 +1232,7 @@ Call to Action
 
 
 
-                            <input type="submit" class="form-control">
+                        <input type="submit" class="form-control">
 
 
                     </div>
@@ -1221,21 +1280,6 @@ Call to Action
 </script>
 
 
-<script>
-    window.onscroll = function() {myFunction()};
-
-    var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
-    }
-</script>
-
 
 <script>
     $('.owl-carousel').owlCarousel({
@@ -1254,6 +1298,61 @@ Call to Action
             }
         }
     })
+</script>
+
+<!--<script>-->
+<!--$(document).ready(function() {-->
+<!--// Custom-->
+<!--var stickyToggle = function(sticky, stickyWrapper, scrollElement) {-->
+<!--var stickyHeight = sticky.outerHeight();-->
+<!--var stickyTop = stickyWrapper.offset().top;-->
+<!--if (scrollElement.scrollTop() >= stickyTop){-->
+<!--stickyWrapper.height(stickyHeight);-->
+<!--sticky.addClass("is-sticky on-sticky-hide ");-->
+<!--}-->
+<!--else{-->
+<!--sticky.removeClass("is-sticky on-sticky-show");-->
+<!--stickyWrapper.height('auto');-->
+<!--}-->
+<!--};-->
+
+<!--// Find all data-toggle="sticky-onscroll" elements-->
+<!--$('[data-toggle="sticky-onscroll"]').each(function() {-->
+<!--var sticky = $(this);-->
+<!--var stickyWrapper = $('<div>').addClass('sticky-wrapper'); // insert hidden element to maintain actual top offset on page-->
+<!--sticky.before(stickyWrapper);-->
+<!--sticky.addClass('sticky ');-->
+
+<!--// Scroll & resize events-->
+<!--$(window).on('scroll.sticky-onscroll resize.sticky-onscroll', function() {-->
+<!--stickyToggle(sticky, stickyWrapper, $(this));-->
+<!--});-->
+
+<!--// On page load-->
+<!--stickyToggle(sticky, stickyWrapper, $(window));-->
+<!--});-->
+<!--});-->
+<!--</script>-->
+
+
+<script>
+    var header = $("#fixed-form");
+    var showDiv = $(".on-sticky-show");
+    var hideDiv = $(".on-sticky-hide");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        if (scroll >= window.innerHeight) {
+            header.addClass("sticky");
+            hideDiv.addClass("hide");
+            showDiv.addClass("show");
+
+        } else {
+            header.removeClass("sticky");
+            hideDiv.removeClass("hide");
+            showDiv.removeClass("show");
+
+        }
+    });
 </script>
 
 </body>
