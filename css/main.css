@@ -237,7 +237,7 @@ body{
     color: #fff;
     border-radius: 0;
     width: 130px;
-
+    text-transform: uppercase;
 }
 
 .carousel-overlay-form .on-sticky-show  input{
@@ -260,7 +260,7 @@ body{
     right: 0;
     top: 0;
     z-index: 1000;
-    width: 1110px;
+    width: 100%;
     max-width: 100%!important;
     padding: 1.7em .5em 1em !important
 }
@@ -275,6 +275,10 @@ body{
 
 .on-sticky-show.show{
     display: block;
+}
+
+.on-sticky-show .form-inline{
+    justify-content: center;
 }
 
 /* ==========================================================================
@@ -601,6 +605,10 @@ footer .navbar-light .navbar-nav .nav-link {
     padding: 0;
 }
 
+footer .navbar-light .navbar-nav .nav-link:hover {
+    color: #565a5c;
+}
+
 footer .copyright > .navbar{
     padding: 0;
     font-size: .8em;
@@ -630,6 +638,7 @@ footer .copyright .social-list li {
     display: inline-block;
     list-style: none;
     margin-right: 0;
+    cursor: pointer;
 }
 
 footer .copyright .social-list li:first-child {
@@ -653,6 +662,17 @@ footer .copyright .social-list li a{
 .footer .stander li a{
     text-transform: uppercase;
     font-size: .8em;
+}
+
+footer .media-body{
+    color: #565a5c;
+}
+
+.footer-hr{
+    border-top: 5px solid rgb(250, 86, 2);
+    margin: -5px auto;
+    width: 1110px;
+    height: 5px;
 }
 
 @media screen and (max-width: 768px) {
@@ -734,7 +754,10 @@ footer .copyright .social-list li a{
 }
 
 
-/*Helper classes*/
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
 
 .margin0{
     margin: 0;
@@ -753,12 +776,14 @@ hr{
     content: "";
     left: 0;
     margin-left: 0;
+    right: auto;
 }
 
 .right:before{
     content: "";
     right: 0;
     margin-left: 0;
+    left: auto;
 }
 
 .border-right{
@@ -821,13 +846,14 @@ hr{
     }
 }
 
+/* ==========================================================================
+   Helper classes ends here
+   ========================================================================== */
 
 
-
-
-
-
-/*Helper classes ends here*/
+/* ==========================================================================
+   Mega menu
+   ========================================================================== */
 
 .exo-menu{
     list-style: none;
@@ -987,7 +1013,8 @@ h4.row.mega-title {
 }
 
 ul.stander li a {
-    padding: 3px 0px;
+    padding: 3px 0;
+    font-size: .8em;
 }
 
 ul.description li {
@@ -1164,10 +1191,9 @@ a.toggle-menu{
 }
 
 .exo-menu li:nth-child(8){
-    width: 5em;
+    width: 4.5em;
     margin: 0;
     text-align: center;
-
 }
 
 
