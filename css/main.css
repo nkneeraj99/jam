@@ -1374,7 +1374,8 @@ Test pre test-prep
 }
 
 #test-prep-tabContent p,
-#test-prep-tabContent ol li{
+#test-prep-tabContent ol li,
+#test-prep-tabContent ul li{
     color: #999999;
     font-size: .9em;
     padding-left: 0;
@@ -1383,6 +1384,10 @@ Test pre test-prep
 
 #test-prep-tab .top-scorer li, .our-achievers li.custom-width{
     width: 32%;
+}
+
+#test-prep-tabContent{
+    margin-bottom: 7em;
 }
 
 
