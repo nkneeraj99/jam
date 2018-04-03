@@ -563,7 +563,7 @@ header{
     padding: 2em;
 }
 
-#get-in-touch button{
+.request-callback{
     background-color: var(--button-color);
     color: #fff;
     margin-bottom: 2em;
@@ -1350,6 +1350,10 @@ Test pre test-prep
     line-height: 3em;
 }
 
+#test-prep-tab li .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border: 1px solid transparent;
+}
+
 #test-prep-tab li .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
     border: none;
     border-bottom: 2px solid var(--button-color);
@@ -1357,9 +1361,6 @@ Test pre test-prep
 
 }
 
-#test-prep-tab li .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
-    border: 1px solid transparent;
-}
 
 #test-prep-tabContent h4{
     color: #343434;
@@ -1384,6 +1385,11 @@ Test pre test-prep
     width: 32%;
 }
 
+
+.FAQ{
+    margin-bottom: 2em;
+}
+
 .FAQ ol {
     padding-left: 15px;
     margin-bottom: 20px;
@@ -1392,6 +1398,7 @@ Test pre test-prep
 
 .FAQ h3 {
     margin-bottom: 20px;
+    font-size: 1.4em;
 }
 
 
@@ -1402,4 +1409,71 @@ Test pre test-prep
 .custom-hr{
     border-color: #dcd2d2;
     border-width: 2px;
+}
+
+
+/*==============================================================
+Course Pricing
+==================================================================*/
+
+.course-pricing{
+    padding-left: 0;
+    text-align: center;
+    margin: 3em 0;
+}
+
+.course-pricing .course-pricing-block{
+    display: inline-flex;
+    list-style: none;
+    border: 1px solid var(--base-color);
+    margin: 10px;
+    width: 30%;
+    height: 330px;
+    max-height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width: 768px) {
+    .course-pricing .course-pricing-block{
+        display: block;
+        width: 100%;
+    }
+
+}
+
+.course-pricing .course-title{
+    padding: 10px;
+    background: var(--base-color);
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.course-pricing .course-points{
+    padding: 10px 30px;
+    text-align: left;
+}
+
+.course-pricing .button-wrap{
+    position: absolute;
+    bottom: 15px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.course-pricing .button-wrap button{
+    background-color: #fff;
+    border: 1px solid var(--base-color);
+    text-transform: uppercase;
+    color: var(--base-color);
+    border-radius: 0;
+    width: 200px;
+    max-width: 100%;
+}
+
+.test-prep .request-callback{
+    background-color: var(--base-color);
 }
