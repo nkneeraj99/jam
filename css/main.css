@@ -361,7 +361,7 @@ header{
 
 .top-scorer li a,
 .our-achievers li a {
-    padding: 20px 0 0;
+    /*padding: 20px 0 0;*/
     text-decoration: none;
     color: #565a5c;
     display: block;
@@ -383,6 +383,11 @@ header{
     width: 100%;
     margin-bottom: 0;
     padding: 20px 20px 0 20px;
+}
+
+.our-achievers li figure img {
+    width: 70% !important;
+    margin:  0 auto;
 }
 
 .top-scorer li .student {
@@ -1165,7 +1170,7 @@ a.toggle-menu{
 }
 
 .stander li a{
-    color: #565a5c;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -1273,6 +1278,9 @@ Sign up success Form
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
     padding: 15px 15px 0 15px;
     margin: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
 }
 
 .signup-form h3{
@@ -1358,7 +1366,7 @@ Test pre test-prep
     border: none;
     border-bottom: 2px solid var(--button-color);
     color: var(--button-color);
-
+    font-weight: bold;
 }
 
 
@@ -1416,6 +1424,16 @@ Test pre test-prep
     border-width: 2px;
 }
 
+
+#test-prep-tab .nav-link:not(.active){
+    color: #565a5c;
+}
+
+.test-prep-title{
+    margin-bottom: 0;
+    line-height: 2em;
+    margin-top: 9px
+}
 
 /*==============================================================
 Course Pricing
@@ -1481,4 +1499,9 @@ Course Pricing
 
 .test-prep .request-callback{
     background-color: var(--base-color);
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
 }
