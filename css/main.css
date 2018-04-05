@@ -349,7 +349,7 @@ header{
     max-width: 100%;
     width: 367px;
     height: 512px;
-    overflow: scroll;
+    overflow: hidden;
     margin: 10px 0 auto;
     display: inline-block;
     text-decoration: none;
@@ -375,7 +375,7 @@ header{
     display: block;
     position: relative;
     max-height: 512px;
-    overflow: scroll;
+    /*overflow: scroll;*/
 }
 
 .top-scorer li figure,
@@ -1504,4 +1504,45 @@ Course Pricing
 .marquee {
     width: 100%;
     overflow: hidden;
+}
+
+/*==============================================================
+Admission Counselling page
+==================================================================*/
+
+.nesting-tabs {
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.nesting-tabs .nav-item{
+    width: 31%;
+    border-radius: 0;
+    border: 1px solid var(--base-color);
+    text-align: center;
+    margin-right: 1em;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nesting-tabs .nav-item {
+        width: 100%;
+        border-radius: 0;
+        border: 1px solid var(--base-color);
+        text-align: center;
+        margin: .5em 0;
+        box-sizing: border-box;
+    }
+}
+
+.nesting-tabs .nav-item a{
+    color: var(--base-color);;
+    text-transform: uppercase;
+}
+
+.nesting-tabs .nav-link.active,
+.nav-pills .show>.nav-link{
+    background-color: var(--base-color);
+    border-radius: 0;
 }
