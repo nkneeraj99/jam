@@ -763,105 +763,6 @@ footer .media-body{
 }
 
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-
-.margin0{
-    margin: 0;
-}
-
-.black-color{
-    color: #000 !important;
-}
-
-.margin-top0{
-    margin-top: 0;
-}
-
-hr{
-    border-top: 1px solid rgba(109, 107, 107, 0.92);
-}
-
-
-.left:before{
-    content: "";
-    left: 0;
-    margin-left: 0;
-    right: auto;
-}
-
-.right:before{
-    content: "";
-    right: 0;
-    margin-left: 0;
-    left: auto;
-}
-
-.border-right{
-    border-right: 1px solid #656464 !important;
-}
-
-@media screen and (max-width: 768px) {
-    .border-right{
-        border-right: none !important;
-    }
-
-    .devider:before{
-        height: 0;
-
-    }
-}
-
-
-
-
-@media (max-width: 767px) {
-    .hidden-xs {
-        display: none !important;
-    }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-    .hidden-sm {
-        display: none !important;
-    }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-    .hidden-md {
-        display: none !important;
-    }
-}
-@media (min-width: 1200px) {
-    .hidden-lg {
-        display: none !important;
-    }
-}
-
-@media (max-width: 767px) {
-    .visible-xs {
-        display: block !important;
-    }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-    .visible-sm {
-        display: block !important;
-    }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-    .visible-md {
-        display: block !important;
-    }
-}
-@media (min-width: 1200px) {
-    .visible-lg {
-        display: block !important;
-    }
-}
-
-/* ==========================================================================
-   Helper classes ends here
-   ========================================================================== */
 
 
 /* ==========================================================================
@@ -1377,7 +1278,7 @@ Test pre test-prep
     margin: 10px 0;
 }
 
-#test-prep-tabContent img {
+#test-prep-tabContent .prep-img {
     margin: 30px 0;
 }
 
@@ -1463,7 +1364,6 @@ Course Pricing
         display: block;
         width: 100%;
     }
-
 }
 
 .course-pricing .course-title{
@@ -1546,3 +1446,207 @@ Admission Counselling page
     background-color: var(--base-color);
     border-radius: 0;
 }
+
+
+/*=================================================================
+Resource Center
+==================================================================*/
+
+.resource-center .article{
+    border: 1px solid #eee;
+    margin: 2em 0;
+    padding: 1em 0;
+}
+
+.resource-center .article .article-img img{
+    margin: 10px  0;
+}
+
+.resource-center .article .article-title{
+    margin: 0 !important;
+    font-size: 1.2em !important;
+    font-weight: 600!important;
+}
+
+.resource-center .article .article-score {
+    color: var(--base-color) !important;
+    font-weight: 600!important;
+    font-size: 1em!important;
+}
+
+
+
+.resource-center .article .article-body p{
+    height: 40px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.resource-center .article .article-body .article-btn{
+    background-color: #fff;
+    border: 1px solid var(--base-color);
+    color: var(--base-color);
+    border-radius: 0;
+    font-weight: 600;
+}
+
+
+.resource-center .course-pricing{
+    margin: 0;
+}
+
+.resource-center .course-pricing .course-pricing-block figure{
+    width: 100%;
+}
+
+.resource-center .course-pricing .course-pricing-block {
+    height: 240px;
+}
+
+
+
+
+.custom-pagination .pagination li  a {
+    color: #565a5c;
+    margin-right: 1px;
+    border-radius: 0;
+}
+
+.custom-pagination .pagination li:not(:first-child):not(:last-child) a {
+    border: none;
+}
+
+.custom-pagination .page-item:first-child .page-link{
+    border-radius: 0;
+}
+
+.custom-pagination .page-item:last-child .page-link{
+    border-radius: 0;
+}
+
+
+.resource-center table thead{
+    background: var(--base-color);
+    color: #fff;
+    font-size: .7em;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+.margin0{
+    margin: 0;
+}
+
+.black-color{
+    color: #000 !important;
+}
+
+.margin-top0{
+    margin-top: 0;
+}
+
+hr{
+    border-top: 1px solid rgba(109, 107, 107, 0.92);
+}
+
+
+.left:before{
+    content: "";
+    left: 0;
+    margin-left: 0;
+    right: auto;
+}
+
+.right:before{
+    content: "";
+    right: 0;
+    margin-left: 0;
+    left: auto;
+}
+
+.border-right{
+    border-right: 1px solid #656464 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .border-right{
+        border-right: none !important;
+    }
+
+    .devider:before{
+        height: 0;
+
+    }
+}
+
+
+
+
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .hidden-sm {
+        display: none !important;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hidden-md {
+        display: none !important;
+    }
+}
+@media (min-width: 1200px) {
+    .hidden-lg {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .visible-xs {
+        display: block !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .visible-sm {
+        display: block !important;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .visible-md {
+        display: block !important;
+    }
+}
+@media (min-width: 1200px) {
+    .visible-lg {
+        display: block !important;
+    }
+}
+
+
+.transparent-button{
+    background-color: #fff;
+    border-radius: 0;
+    border: 1px solid var(--base-color);
+    color: var(--base-color);
+    font-weight: 600;
+}
+
+.filled-btn{
+    background-color: var(--base-color);;
+    border-radius: 0;
+    border: none;
+    color: #fff
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+/* ==========================================================================
+   Helper classes ends here
+   ========================================================================== */
