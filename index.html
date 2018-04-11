@@ -30,7 +30,6 @@
 <!--==============================================================
 Header
 ==================================================================-->
-
 <header>
     <div class="top-bar">
         <div class="container">
@@ -59,33 +58,224 @@ Header
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon" id="hamburger-menu-icon-main"></span>
                 </button>
+            </div>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="nav-link" href="#">test prep <span class="sr-only">(current)</span></a></li>
 
-                        <li class="nav-item"><a class="nav-link" href="#">SUCCESS STORIES</a></li>
+            <div id="navigation-mob">
+            </div>
+            <div class="navigation-mob-child">
+                <div class="row">
+                    <div class="col-sm-1 pull-right">
+                        <button type="button" class="close closex p-20 " aria-label="Close"><span aria-hidden="true">×</span></button>
+                    </div>
 
-                        <li class="nav-item"><a class="nav-link" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ADMISSION COUNSELLING</a></li>
 
-                        <li class="nav-item"><a class="nav-link " href="#">OUR COMPANY</a></li>
-                        <li class="nav-item"><a class="nav-link " href="#">CONTACT US</a></li>
-                        <li class="nav-item"><a class="nav-link " href="#"><i class="fas fa-share-alt"></i></a></li>
-                        <li class="nav-item">
-                            <div class="menu-search-container">
-                                <input type="search" class="form-control" placeholder="Type your search words">
-                                <i class="fa fa-search icon-attach"></i>
-
+                    <div class="panel-group menu-items-container" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse9">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">
+                                        TEST PREP &nbsp; <i class="fa fa-angle-down icon-down"></i>
+                                    </a>
+                                </h4>
                             </div>
-                        </li>
-                    </ul>
+                            <div id="collapse9" class="panel-collapse collapse ">
+                                <div class="panel-body">
+                                    <h4 class="row mega-title">Gmat</h4>
+                                    <ul class="stander">
+                                        <li><a href="test-prep-gmat.html">GMAT Exam</a></li>
+                                        <li><a href="test-prep-gmat.html#classroom-training-tab">GMAT Classroom Training</a></li>
+                                        <li><a href="test-prep-gmat.html">GMAT live Online Classes</a></li>
+                                        <li><a href="test-prep-gmat.html">GMAT Online training</a></li>
+                                        <li><a href="test-prep-gmat.html">GMAT Private Tutoring</a></li>
+                                    </ul>
+
+                                    <h4 class="row mega-title">gre</h4>
+                                    <ul class="stander">
+                                        <li><a href="test-prep-gre.html">GRE Exam</a></li>
+                                        <li><a href="test-prep-gre.html">GRE Classroom Training</a></li>
+                                        <li><a href="test-prep-gre.html">GRE Online Training</a></li>
+                                    </ul>
+
+                                    <h4 class="row mega-title">sat</h4>
+                                    <ul class="stander">
+                                        <li><a href="test-prep-sat.html">SAT</a></li>
+                                        <li><a href="test-prep-sat.html">SAT Classroom Training</a></li>
+                                        <li><a href="test-prep-sat.html">SAT Private Tutoring</a></li>
+                                        <li><a href="test-prep-sat.html">SAT live Online Classes</a></li>
+                                    </ul>
+
+                                    <h4 class="row mega-title">iltes</h4>
+                                    <ul class="stander">
+                                        <li><a href="test-prep-ielts.html">ILTES Exam</a></li>
+                                        <li><a href="test-prep-ielts.html">ILTES Classroom Training</a></li>
+                                    </ul>
+
+                                    <h4 class="row mega-title">tofel</h4>
+                                    <ul class="stander">
+                                        <li><a href="test-prep-toefl.html">TOFEL Exam</a></li>
+                                        <li><a href="test-prep-toefl.html">TOFEL Classroom Training</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse10">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">
+                                        ADMISSION COUNSELLING &nbsp; <i class="fa fa-angle-down icon-down"></i>
+
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="collapse10" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4 class="row mega-title">Admission Counselling</h4>
+                                    <ul class="stander">
+                                        <li><a href="admission-counselling.html">Undergrad Admissions Counselling</a></li>
+                                        <li><a href="admission-counselling.html">MBA Admissions Counselling</a></li>
+                                        <li><a href="admission-counselling.html">MS & PhD Admissions Counselling</a></li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse7">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                                        SUCCESS STORIES &nbsp; <i class="fa fa-angle-down icon-down"></i>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse7" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4 class="row mega-title">Success Stories</h4>
+                                    <ul class="stander">
+                                        <li><a href="success-stories-reviews.html"> Gmat</a></li>
+                                        <li><a href="success-stories-reviews.html"> GRE</a></li>
+                                        <li><a href="success-stories-reviews.html"> sat</a></li>
+                                        <li><a href="success-stories-reviews.html"> toefl</a></li>
+                                        <li><a href="success-stories-reviews.html"> ielts</a></li>
+                                        <li><a href="success-stories-reviews.html"> admission counselling</a></li>
+
+                                    </ul>
+
+
+                                    <h4 class="row mega-title">Result</h4>
+                                    <ul class="stander">
+                                        <li><a href="success-stories-recent-results.html"> Gmat</a></li>
+                                        <li><a href="success-stories-recent-results.html"> GRE</a></li>
+                                        <li><a href="success-stories-recent-results.html"> sat</a></li>
+                                        <li><a href="success-stories-recent-results.html"> toefl</a></li>
+                                        <li><a href="success-stories-recent-results.html"> ielts</a></li>
+                                        <li><a href="success-stories-recent-results.html"> admission counselling</a></li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                        Resource center STORIES &nbsp;<i class="fa fa-angle-down icon-down"></i>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4 class="row mega-title">Library</h4>
+                                    <ul class="stander">
+                                        <li><a href="resource-center.html">Undergrad</a></li>
+                                        <li><a href="resource-center.html">MBA</a></li>
+                                        <li><a href="resource-center.html">MS and PHD</a></li>
+                                        <li><a href="resource-center.html">General</a></li>
+                                    </ul>
+
+
+                                    <h4 class="row mega-title">Events & Webinar</h4>
+                                    <ul class="stander">
+                                        <li><a href="resource-center.html">Recent Events</a></li>
+                                        <li><a href="resource-center.html">Upcoming Events</a></li>
+                                        <li><a href="resource-center.html">Webinars</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                        Our Company &nbsp;<i class="fa fa-angle-down icon-down"></i></a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4 class="row mega-title">About us</h4>
+                                    <ul class="stander">
+                                        <li><a href="about-us.html">Company Profile</a></li>
+                                        <li><a href="our-company-franchise.html">Vision statement</a></li>
+                                        <li><a href="our-company-franchise.html">Directors</a></li>
+                                        <li><a href="our-company-franchise.html">The Jamboree Edge</a></li>
+
+                                    </ul>
+
+                                    <h4 class="row mega-title">Media Coverage</h4>
+                                    <ul class="stander">
+                                        <li><a href="our-company-media-coverage.html">Electronic</a></li>
+                                        <li><a href="our-company-media-coverage.html">Newspaper</a></li>
+                                        <li><a href="our-company-media-coverage.html">Franchise Opportunity</a></li>
+                                        <li><a href="our-company-media-coverage.html">Institution Programs</a></li>
+                                        <li><a href="our-company-media-coverage.html">Careers</a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="#collapse3">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                        CONTACT US &nbsp;<i class="fa fa-angle-down icon-down"></i></a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body"><div class="menu-search-container">
+                                    <input type="search" class="form-control" placeholder="Type your search words"><i class="fa fa-search icon-attach"></i>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <div class="menu-search-container">
+                        <input type="search" class="form-control" placeholder="Type your search words"><i class="fa fa-search icon-attach"></i>
+                    </div>
+
+
 
                 </div>
-
-
             </div>
+
 
         </nav>
 
@@ -195,16 +385,10 @@ Header
 
                                             </div>
 
-
-
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
-
-
-
                         </li>
 
 
@@ -217,13 +401,13 @@ Header
                                             <div class="col-md-2"></div>
 
                                             <div class="col-md-2">
-                                                <h4 class="row mega-title">Success Stories</h4>
+                                                <h4 class="row mega-title">Reviews</h4>
                                                 <ul class="stander">
                                                     <li><a href="success-stories-reviews.html"> Gmat</a></li>
                                                     <li><a href="success-stories-reviews.html"> GRE</a></li>
-                                                    <li><a href="success-stories-reviews.html"> sat</a></li>
-                                                    <li><a href="success-stories-reviews.html"> toefl</a></li>
-                                                    <li><a href="success-stories-reviews.html"> ielts</a></li>
+                                                    <li><a href="success-stories-reviews.html"> SAT</a></li>
+                                                    <li><a href="success-stories-reviews.html"> TOEFL</a></li>
+                                                    <li><a href="success-stories-reviews.html"> IELTS</a></li>
                                                     <li><a href="success-stories-reviews.html"> admission counselling</a></li>
 
                                                 </ul>
@@ -231,17 +415,15 @@ Header
 
 
                                             <div class="col-md-2">
-                                                <h4 class="row mega-title">Result</h4>
                                                 <ul class="stander">
-                                                    <li><a href="success-stories-reviews.html"> Gmat</a></li>
-                                                    <li><a href="success-stories-reviews.html"> GRE</a></li>
-                                                    <li><a href="success-stories-reviews.html"> sat</a></li>
-                                                    <li><a href="success-stories-reviews.html"> toefl</a></li>
-                                                    <li><a href="success-stories-reviews.html"> ielts</a></li>
-                                                    <li><a href="success-stories-reviews.html"> admission counselling</a></li>
+                                                    <li><a href="success-stories-recent-results.html"> Gmat</a></li>
+                                                    <li><a href="success-stories-recent-results.html"> GRE</a></li>
+                                                    <li><a href="success-stories-recent-results.html"> sat</a></li>
+                                                    <li><a href="success-stories-recent-results.html"> toefl</a></li>
+                                                    <li><a href="success-stories-recent-results.html"> ielts</a></li>
+                                                    <li><a href="success-stories-recent-results.html"> admission counselling</a></li>
 
                                                 </ul>
-
                                             </div>
 
                                             <div class="col-md-2">
@@ -274,18 +456,24 @@ Header
                                             <div class="col-md-2">
                                                 <h4 class="row mega-title">Library</h4>
                                                 <ul class="stander">
-                                                    <li><a href="success-stories-reviews.html">Undergrad</a></li>
-                                                    <li><a href="success-stories-reviews.html">MBA</a></li>
-                                                    <li><a href="success-stories-reviews.html">MS and PHD</a></li>
-                                                    <li><a href="success-stories-reviews.html">Undergrad</a></li>
-                                                    <li><a href="success-stories-reviews.html">General</a></li>
-                                                    <li><a href="success-stories-reviews.html">Resent Events</a></li>
-                                                    <li><a href="success-stories-reviews.html">Upcoming Events</a></li>
-                                                    <li><a href="success-stories-reviews.html">Webinars </a></li>
-
+                                                    <li><a href="resource-center.html">Undergrad</a></li>
+                                                    <li><a href="resource-center.html">MBA</a></li>
+                                                    <li><a href="resource-center.html">MS and PHD</a></li>
+                                                    <li><a href="resource-center.html">General</a></li>
                                                 </ul>
+
                                             </div>
 
+
+                                            <div class="col-md-2">
+                                                <h4 class="row mega-title">Events & Webinar</h4>
+                                                <ul class="stander">
+                                                    <li><a href="resource-center.html">Recent Events</a></li>
+                                                    <li><a href="resource-center.html">Upcoming Events</a></li>
+                                                    <li><a href="resource-center.html">Webinars</a></li>
+                                                </ul>
+
+                                            </div>
 
                                             <div class="col-md-2">
 
@@ -295,11 +483,7 @@ Header
 
                                             </div>
 
-                                            <div class="col-md-2">
-
-                                            </div>
-
-                                            <div class="col-md-2">
+                                            <div class="col-md-1">
 
                                             </div>
 
@@ -321,10 +505,10 @@ Header
                                             <div class="col-md-2">
                                                 <h4 class="row mega-title">About us</h4>
                                                 <ul class="stander">
-                                                    <li><a href="success-stories-reviews.html">Company Profile</a></li>
-                                                    <li><a href="success-stories-uni-deadline.html">Vision statement</a></li>
-                                                    <li><a href="success-stories-uni-deadline.html">Directors</a></li>
-                                                    <li><a href="success-stories-uni-deadline.html">The Jamboree Edge</a></li>
+                                                    <li><a href="about-us.html">Company Profile</a></li>
+                                                    <li><a href="our-company-franchise.html">Vision statement</a></li>
+                                                    <li><a href="our-company-franchise.html">Directors</a></li>
+                                                    <li><a href="our-company-franchise.html">The Jamboree Edge</a></li>
 
                                                 </ul>
                                             </div>
@@ -333,10 +517,12 @@ Header
                                             <div class="col-md-2">
                                                 <h4 class="row mega-title">Media Coverage</h4>
                                                 <ul class="stander">
-                                                    <li><a href="success-stories-reviews.html">Electronic</a></li>
-                                                    <li><a href="success-stories-uni-deadline.html">Newspaper</a></li>
+                                                    <li><a href="our-company-media-coverage.html">Electronic</a></li>
+                                                    <li><a href="our-company-media-coverage.html">Newspaper</a></li>
+                                                    <li><a href="our-company-media-coverage.html">Franchise Opportunity</a></li>
+                                                    <li><a href="our-company-media-coverage.html">Institution Programs</a></li>
+                                                    <li><a href="our-company-media-coverage.html">Careers</a></li>
                                                 </ul>
-
                                             </div>
 
                                             <div class="col-md-2">
@@ -1461,7 +1647,11 @@ Footer
 </div>
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 
 
 <script src="js/vendor/bootstrap.min.js"></script>
@@ -1484,7 +1674,6 @@ Footer
 </script>
 
 <script>
-
     $(function () {
         $('.toggle-menu-custom').click(function(){
             $('.exo-menu').toggleClass('display');
@@ -1492,7 +1681,6 @@ Footer
         });
 
     });
-
 
 </script>
 
@@ -1557,6 +1745,32 @@ Footer
         $(".AddClose").click(function () {
             $(this).closest("div").hide();
         });
+    });
+
+</script>
+
+<script type="text/javascript">
+    /*    offcanvas menu*/
+    $('#hamburger-menu-icon-main').click(function(){
+        if($('#hamburger-menu-icon-main').hasClass('active')){
+            $('#hamburger-menu-icon-main').removeClass('active');
+            document.getElementById("navigation-mob").style.display = "none";
+            $('.navigation-mob-child').animate({right:'-100%'});
+        }
+        else{
+            $('#hamburger-menu-icon-main').addClass('active');
+            document.getElementById("navigation-mob").style.display = "block";
+            $('html').addClass('no-scroll');
+            $('.navigation-mob-child').animate({right:'0px'});
+            return false;
+        }
+    });
+
+    $("#navigation-mob, .close").click(function(){
+        document.getElementById("navigation-mob").style.display = "none";
+        $('.navigation-mob-child').animate({right:'-100%'});
+        $('html').removeClass('no-scroll');
+        $('#hamburger-menu-icon-main').removeClass('active');
     });
 
 </script>
