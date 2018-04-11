@@ -1382,7 +1382,10 @@ Footer
 </div>
 
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 
 
 <script src="js/vendor/bootstrap.min.js"></script>
@@ -1423,6 +1426,31 @@ Footer
     })
 </script>
 
+<script type="text/javascript">
+    /*    offcanvas menu*/
+    $('#hamburger-menu-icon-main').click(function(){
+        if($('#hamburger-menu-icon-main').hasClass('active')){
+            $('#hamburger-menu-icon-main').removeClass('active');
+            document.getElementById("navigation-mob").style.display = "none";
+            $('.navigation-mob-child').animate({right:'-100%'});
+        }
+        else{
+            $('#hamburger-menu-icon-main').addClass('active');
+            document.getElementById("navigation-mob").style.display = "block";
+            $('html').addClass('no-scroll');
+            $('.navigation-mob-child').animate({right:'0px'});
+            return false;
+        }
+    });
+
+    $("#navigation-mob, .close").click(function(){
+        document.getElementById("navigation-mob").style.display = "none";
+        $('.navigation-mob-child').animate({right:'-100%'});
+        $('html').removeClass('no-scroll');
+        $('#hamburger-menu-icon-main').removeClass('active');
+    });
+
+</script>
 
 
 </body>
